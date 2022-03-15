@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "incomeTax", "incomeTax\incomeTax.csproj", "{B5DBC9ED-0143-4909-876F-BC5FB96BDC3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "incomeTaxTests", "test\incomeTaxTests.csproj", "{210E754A-7415-4CC0-8BDE-E6D60135ED2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5DBC9ED-0143-4909-876F-BC5FB96BDC3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5DBC9ED-0143-4909-876F-BC5FB96BDC3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5DBC9ED-0143-4909-876F-BC5FB96BDC3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5DBC9ED-0143-4909-876F-BC5FB96BDC3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{210E754A-7415-4CC0-8BDE-E6D60135ED2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{210E754A-7415-4CC0-8BDE-E6D60135ED2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{210E754A-7415-4CC0-8BDE-E6D60135ED2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{210E754A-7415-4CC0-8BDE-E6D60135ED2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

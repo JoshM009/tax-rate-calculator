@@ -5,6 +5,7 @@ namespace incomeTax.Models
   public class AnnualIncomeModel 
   {
     [Required]
+    [Range(1, int.MaxValue, ErrorMessage = "A real year must be supplied")]
     public int TaxYear { get; set; }
 
     [Required]

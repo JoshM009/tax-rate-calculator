@@ -4,6 +4,7 @@ using incomeTax.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
+using System.Net.Mime;
 using System.Threading.Tasks;
 
 namespace incomeTax.Controllers
@@ -23,9 +24,11 @@ namespace incomeTax.Controllers
 
     [HttpPost]
     [Route(MarginalTaxApi.MarginalApiRoute)]
+    [Consumes(MediaTypeNames.Application.Json)]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+    [Produces(MediaTypeNames.Application.Json)]
     public async Task<ActionResult<IncomeTaxResponseModel>> CalculateIncomeTax(AnnualIncomeModel incomeTax)
     {
       _logger.LogInformation($"Received total income tax request: {incomeTax}");

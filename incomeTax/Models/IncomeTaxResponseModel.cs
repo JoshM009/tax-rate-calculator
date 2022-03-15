@@ -6,6 +6,7 @@ namespace incomeTax.Models
 {
   public class IncomeTaxResponseModel 
   {
+    [JsonPropertyName("totalIncomeTax")]
     public string TotalIncomeTax { get; set; }
 
     private decimal _totalIncomeTaxRaw;

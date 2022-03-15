@@ -28,7 +28,7 @@ namespace incomeTax.Clients
       _configuration = configuration;
       _memoryCache = memoryCache;
 
-      //TODO: Move configuration handling to a proper options snapshot class to take advantage of hot reloading
+      //TODO: Move configuration handling to an options snapshot class to take advantage of hot reloading
       _marginalTaxUrl = _configuration["IncomeTaxApi:MarginalTaxUrl"];
       _useCaching = bool.Parse(_configuration["IncomeTaxApi:UseCaching"]);
       _cacheTimeInSeconds = TimeSpan.
